@@ -1,5 +1,5 @@
 <div id="map-container"></div>
 
-<mn-shell class="shell"></mn-shell>
+<mn-shell class="shell" *ngIf="dialogService.getDialog() === dialogService.dialogs.Map"></mn-shell>
 
-<mn-place-edit></mn-place-edit>
+<mn-place-edit *ngIf="dialogService.getDialog() === dialogService.dialogs.Editor"></mn-place-edit>
