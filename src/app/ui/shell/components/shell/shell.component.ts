@@ -45,4 +45,8 @@ export class ShellComponent implements OnInit {
     this.isShowAddButton = false
     clearTimeout(this.addButtonLifeTimerId)
   }
+
+  public onChangeSelectedTags(e: Event): void {
+    console.log(e)
+  }
 }
